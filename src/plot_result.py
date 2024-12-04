@@ -41,7 +41,7 @@ def plot_pred_pixels(sample_sr):
     plt.ylabel('Frequency')
     plt.show()
 
-def samplefull(lr_images, hr_images, index):
+def samplefull(lr_images, hr_images, index, srcnn):
   # Test the model on a single full-size image
   sample_lr_full = lr_images[index]
   sample_hr_full = hr_images[index]

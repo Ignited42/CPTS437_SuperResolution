@@ -1,7 +1,7 @@
 import os
 import numpy as np
 import matplotlib.pyplot as plt
-import srcnn
+import build_cnn as sr
 import tensorflow as tf
 from tensorflow.keras import layers, models, optimizers
 import data_preparation as datprep
@@ -55,7 +55,7 @@ hr_patches = hr_patches / 255.0
 
 
 # Build model
-srcnn = build_srcnn()
+srcnn = sr.build_srcnn()
 optimizer = optimizers.Adam(learning_rate=1e-6)
 
 # Loss function: Mean Squared Error (simpler than perceptual loss)
@@ -111,4 +111,4 @@ plot.plot_samples(sample_lr, sample_hr, sample_sr)
 
 # Show full samples
 for i in range(9):
-  plot.samplefull(lr_images, hr_images, i)
+  plot.samplefull(lr_images, hr_images, i, srcnn)
