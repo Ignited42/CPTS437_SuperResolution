@@ -27,7 +27,7 @@ To Train Model:
 
 * Download SuperResolutionNotebook.ipynb and open them in a Colab environment.
 * It is recommended to use an upgraded version of Colab, as this model was trained on an A100 GPU.
-* For the base version of Colab, reduce the batch_size to a manageable level for the GPU being used to avoid memory issues. **(IMPORTANT)**
+* For the base version of Colab, reduce the `batch_size` to a manageable level for the GPU being used to avoid memory issues. **(IMPORTANT)**
 
 To Test Model:
 
