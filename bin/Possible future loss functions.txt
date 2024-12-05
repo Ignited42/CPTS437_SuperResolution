@@ -1,0 +1,6 @@
+Mean Absolute Error
+Structural Similarity Index
+Gradient-Based Loss
+
+Maybe combine them?
+	By hyper-parameter tuning to find the weight of each loss
